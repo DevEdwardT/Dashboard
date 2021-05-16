@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>avydia - Admin panel</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="header__content">
+
+
+            <div class="header__logo-box">
+                <h1 class="heading-1">avydia</h1>
+            </div>
+
+            <form action="#" class="search">
+
+                <input type="text" class="search__input" placeholder="Search...">
+                <a href="#" class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </a>
+
+            </form>
+
+            <nav class="user-nav">
+
+                <svg class="user-nav__icon-hidden">
+                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+
+                <div class="user-nav__user">
+                    <span class="user-nav__user-name">ADMIN</span>
+                    <img src="img/user.jpg" alt="user" class="user-nav__user-photo">
+                </div>
+
+            </nav>
+
+
+        </div>
+
+    </header>
+
+
+    <div class="navigation">
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">
+                        <svg class="navigation__list-icon">
+                            <use xlink:href="img/sprite.svg#icon-user"></use>
+                        </svg>
+                        Staff
+                    </a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">
+                        <svg class="navigation__list-icon">
+                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                        </svg>
+                        Clients
+                    </a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">
+                        <svg class="navigation__list-icon">
+                            <use xlink:href="img/sprite.svg#icon-open-book"></use>
+                        </svg>
+                        Booking
+                    </a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">
+                        <svg class="navigation__list-icon">
+                            <use xlink:href="img/sprite.svg#icon-location"></use>
+                        </svg>
+                        Venues
+                    </a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">
+                        <svg class="navigation__list-icon">
+                            <use xlink:href="img/sprite.svg#icon-suitcase"></use>
+                        </svg>
+                        Finance
+                    </a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">
+                        <svg class="navigation__list-icon">
+                            <use xlink:href="img/sprite.svg#icon-sound-mix"></use>
+                        </svg>
+                        Settings
+                    </a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="content">
+
+            <!-- <div class="row">
+
+                <div class="welcome">
+
+                    <div class="welcome__left">
+
+                        <h4 class="heading-5">Welcome, Admin!</h4>
+
+                    </div>
+
+                    <div class="welcome__right">
+
+                        <div class="welcome__stat">
+                            <p class="paragraph">Online Users</p>
+                            <h5 class="heading-5">12,320</h5>
+                        </div>
+
+                        <div class="welcome__stat">
+                            <p class="paragraph">Total Users</p>
+                            <h5 class="heading-5">52,157</h5>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+
+            <div class="row">
+
+
+                <div class="col-quarter">
+                    <div class="feature feature--1">
+
+                        <h6 class="heading-6"> Employees registered</h6>
+
+                        <div class="feature__content">
+
+                            <div class="feature__content--left">
+
+                                <span class="feature__number">+43</span>
+
+                                <span class="feature__detail">Compared to last month</span>
+
+                            </div>
+
+                            <div class="feature__content--right">
+
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/sprite.svg#icon-arrow-long-up"></use>
+                                </svg>
+
+                                <span class="feature__percentage">+34.5%</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-quarter">
+                    <div class="feature feature--2">
+
+                        <h6 class="heading-6"> Applications</h6>
+
+                        <div class="feature__content">
+
+                            <div class="feature__content--left">
+
+                                <span class="feature__number">-2</span>
+
+                                <span class="feature__detail">Compared to last month</span>
+
+                            </div>
+
+                            <div class="feature__content--right">
+
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/sprite.svg#icon-arrow-long-down"></use>
+                                </svg>
+
+                                <span class="feature__percentage">-26%</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-quarter">
+                    <div class="feature feature--3">
+
+                        <h6 class="heading-6"> Earnings</h6>
+
+                        <div class="feature__content">
+
+                            <div class="feature__content--left">
+
+                                <span class="feature__number">$25,143</span>
+
+                                <span class="feature__detail">This week</span>
+
+                            </div>
+
+                            <div class="feature__content--right">
+
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/sprite.svg#icon-arrow-long-up"></use>
+                                </svg>
+
+                                <span class="feature__percentage">+54.4%</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-quarter">
+                    <div class="feature feature--4">
+
+                        <h6 class="heading-6"> Projected earnings</h6>
+
+                        <div class="feature__content">
+
+                            <div class="feature__content--left">
+
+                                <span class="feature__number">$69,420</span>
+
+                                <span class="feature__detail">By the end of the month</span>
+
+                            </div>
+
+                            <div class="feature__content--right">
+
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/sprite.svg#icon-arrow-long-up"></use>
+                                </svg>
+
+                                <span class="feature__percentage">+76.5%</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-full">
+
+                    <div class="card">
+
+                        <div class="table__header">
+                            <h6 class="heading-5">Curent shifts</h6>
+                            <p class="paragraph">The curent ongoing shifts this week.</p>
+                        </div>
+
+
+                        <div class="table-content">
+
+                            <table class="table">
+
+                                <thead class="table__head">
+
+                                    <th>Date</th>
+                                    <th>Client</th>
+                                    <th>Venue</th>
+                                    <th>Staff requested</th>
+                                    <th>Staff confirmed</th>
+
+                                </thead>
+
+                                <tbody class="table__body">
+
+                                    <tr>
+                                        <td data-label="Date">10.01.2021</td>
+                                        <td data-label="Client">Jenny White</td>
+                                        <td data-label="Venue">CABANA</td>
+                                        <td data-label="Staff requested">100</td>
+                                        <td data-label="Staff confirmed">73</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Date">12.01.2021</td>
+                                        <td data-label="Client">Mark Cane</td>
+                                        <td data-label="Venue">GRAND REGAL HOTELS</td>
+                                        <td data-label="Staff requested">50</td>
+                                        <td data-label="Staff confirmed">49</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Date">04.01.2021</td>
+                                        <td data-label="Client">Michael Joseph</td>
+                                        <td data-label="Venue">THE AERIE</td>
+                                        <td data-label="Staff requested">75</td>
+                                        <td data-label="Staff confirmed">70</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Date">09.01.2021</td>
+                                        <td data-label="Client">Maria Jackson</td>
+                                        <td data-label="Venue">THE DUNLUCE</td>
+                                        <td data-label="Staff requested">45</td>
+                                        <td data-label="Staff confirmed">42</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Date">22.01.2021</td>
+                                        <td data-label="Client">Sohpie Allison</td>
+                                        <td data-label="Venue">LONG BAY RESORT</td>
+                                        <td data-label="Staff requested">25</td>
+                                        <td data-label="Staff confirmed">12</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Date">18.01.2021</td>
+                                        <td data-label="Client">Bon Bin Nagasaki</td>
+                                        <td data-label="Venue">TOREKOV HOTELL</td>
+                                        <td data-label="Staff requested">120</td>
+                                        <td data-label="Staff confirmed">120</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-half">
+
+                    <div class="card">
+
+
+                        <div class="card__header">
+
+                            <h6 class="heading-5">Top working staff</h6>
+                            <p class="paragraph">The top most active staff from the last month.</p>
+
+                        </div>
+
+                        <div class="card__content">
+
+                            <div class="card__box">
+
+                                <div class="card__area">
+                                    <img src="img/user-1.jpg" alt="photo" class="card__img">
+                                    <p class="card__name">Mike Hawk</p>
+                                </div>
+
+                                <div class="card__area">
+                                    <span class="card__number">22 shifts</span>
+                                    <svg class="card__icon card__icon--1">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-long-up"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card__content">
+
+                            <div class="card__box">
+
+                                <div class="card__area">
+                                    <img src="img/user-2.jpg" alt="photo" class="card__img">
+                                    <p class="card__name">Iasmina Clitina</p>
+                                </div>
+
+                                <div class="card__area">
+                                    <span class="card__number">18 shifts</span>
+                                    <svg class="card__icon card__icon--2">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-long-down"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card__content">
+
+                            <div class="card__box">
+
+                                <div class="card__area">
+                                    <img src="img/user-3.jpg" alt="photo" class="card__img">
+                                    <p class="card__name">Klaun Johannis</p>
+                                </div>
+
+                                <div class="card__area">
+                                    <span class="card__number">17 shifts</span>
+                                    <svg class="card__icon card__icon--1">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-long-up"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card__content">
+
+                            <div class="card__box">
+
+                                <div class="card__area">
+                                    <img src="img/user-4.jpg" alt="photo" class="card__img">
+                                    <p class="card__name">Marcél Bidéou</p>
+                                </div>
+
+                                <div class="card__area">
+                                    <span class="card__number">15 shifts</span>
+                                    <svg class="card__icon card__icon--1">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-long-up"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card__content">
+
+                            <div class="card__box">
+
+                                <div class="card__area">
+                                    <img src="img/user-5.jpg" alt="photo" class="card__img">
+                                    <p class="card__name">Benny Wifebeater</p>
+                                </div>
+
+                                <div class="card__area">
+                                    <span class="card__number">13 shifts</span>
+                                    <svg class="card__icon card__icon--2">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-long-down"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card__content">
+
+                            <div class="card__box">
+
+                                <div class="card__area">
+                                    <img src="img/user-6.jpg" alt="photo" class="card__img">
+                                    <p class="card__name">Alexis Texas</p>
+                                </div>
+
+                                <div class="card__area">
+                                    <span class="card__number">10 shifts</span>
+                                    <svg class="card__icon card__icon--1">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-long-up"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-half">
+
+                    <div class="card">
+
+
+                        <div class="card__header">
+
+                            <h6 class="heading-5">Top paying customers</h6>
+                            <p class="paragraph">The top best paying customers from the last month.</p>
+
+                        </div>
+
+                        <div class="card__content">
+
+                            <div class="card__box">
+
+                                <div class="card__area">
+                                    <img src="img/hotel-1.jpg" alt="photo" class="card__img">
+                                    <p class="card__name">TOREKOV HOTELL</p>
+                                </div>
+
+                                <div class="card__area">
+                                    <span class="card__number">$103,647</span>
+                                    <svg class="card__icon card__icon--1">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-long-up"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card__content">
+
+                            <div class="card__box">
+
+                                <div class="card__area">
+                                    <img src="img/hotel-2.png" alt="photo" class="card__img">
+                                    <p class="card__name">THE AERIE</p>
+                                </div>
+
+                                <div class="card__area">
+                                    <span class="card__number">$97,492</span>
+                                    <svg class="card__icon card__icon--1">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-long-up"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card__content">
+
+                            <div class="card__box">
+
+                                <div class="card__area">
+                                    <img src="img/hotel-3.png" alt="photo" class="card__img">
+                                    <p class="card__name">LONG BAY RESORT</p>
+                                </div>
+
+                                <div class="card__area">
+                                    <span class="card__number">$88,352</span>
+                                    <svg class="card__icon card__icon--1">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-long-up"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card__content">
+
+                            <div class="card__box">
+
+                                <div class="card__area">
+                                    <img src="img/hotel-4.jpg" alt="photo" class="card__img">
+                                    <p class="card__name">CABANA</p>
+                                </div>
+
+                                <div class="card__area">
+                                    <span class="card__number">$76,909</span>
+                                    <svg class="card__icon card__icon--2">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-long-down"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card__content">
+
+                            <div class="card__box">
+
+                                <div class="card__area">
+                                    <img src="img/hotel-5.png" alt="photo" class="card__img">
+                                    <p class="card__name">GRAND REGAL HOTELS</p>
+                                </div>
+
+                                <div class="card__area">
+                                    <span class="card__number">$62,813</span>
+                                    <svg class="card__icon card__icon--2">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-long-down"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card__content">
+
+                            <div class="card__box">
+
+                                <div class="card__area">
+                                    <img src="img/hotel-6.png" alt="photo" class="card__img">
+                                    <p class="card__name">THE DUNLUCE</p>
+                                </div>
+
+                                <div class="card__area">
+                                    <span class="card__number">$52,284</span>
+                                    <svg class="card__icon card__icon--1">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-long-up"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-full">
+
+                    <div class="card">
+
+                        <div class="card__header">
+
+                            <h6 class="heading-5">Income per areas</h6>
+                            <p class="paragraph">Most profitable areas compared to last month.</p>
+
+                        </div>
+
+                        <div class="map-content">
+
+                            <div class="map">
+
+                                <svg version="1.2" viewbox="0 0 1000 884" xmlns="http://www.w3.org/2000/svg">
+                                    <a xlink:title="Attard" href="#" class="map__item">
+                                        <path d="M655.9 581.3l11.5 1.9 16.2-0.9 6.9 10.4 9.3 5.7 14.6 2.9-2.3 10.4-6.2 8.6-45.4 2.8-8.5 8.6-13.1 2.8-13.8-1.9-13.1-3.8-14.6 2.9-4.6-15.2 1.5-22.8 3.8-20 8.5-4.7 16.2-2 14.6 6.7 9.2 6.7 9.3 0.9z" id="MLT5920" name="Attard">
+                                        </path>
+                                    </a>
+                                    <a xlink:title="Mdina" href="#" class="map__item">
+                                        <path d="M597.4 631.7l-20.8-1-6.2-5.7 3.9-5.7 9.2-2.8 9.3 0 4.6 15.2z" id="MLT5921" name="Mdina">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Imtarfa" href="#" class="map__item">
+                                        <path d="M592.8 616.5l-9.3 0-9.2 2.8-3.9 5.7-16.1-5.7-1.6-13.3 7.7-8.5 24.7-1 9.2-2.8-1.5 22.8z" id="MLT5922" name="Imtarfa">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Rabat" href="#" class="map__item">
+                                        <path d="M598.1 573.7l-3.8 20-9.2 2.8-24.7 1-7.7 8.5 1.6 13.3 16.1 5.7 6.2 5.7 20.8 1-0.8 13.3 4.6 3.8 5.4 33.2-9.2 12.4-16.2 2.8-20.8-3.8-6.9-9.5-1.5-8.5-6.2-6.7-13.9 0-26.9 3.8-18.5-0.9-14 8.5-12.8-17-36.9-20-8-15.2 0-62.8 11.7 6.7 10-2.8 10.8 11.4 9.2 0.9 13.9-13.3 10 0 8.4-4.8 10 4.8 8.5-1 7.7-9.5 34.6-4.7 13.9 0 11.6-3.8 7.6 9.5 15.4 15.2z" id="MLT5923" name="Rabat">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Mġarr" href="#" class="map__item">
+                                        <path d="M572.7 539.5l2.4 9.5-11.6 3.8-13.9 0-34.6 4.7-7.7 9.5-8.5 1-10-4.8-8.4 4.8-10 0-13.9 13.3-9.2-0.9-10.8-11.4-10 2.8-11.7-6.7 0-36.9-4.5-44.6 16.2-3.1 16.9-5.7 20.8-9.5 9.2-7.6 17-1.9 5.4-6.7 14.6 3.9 4.6 5.7-3.8 9.5-7 6.6 0.8 9.5 8.5 1.9 19.2 1.9 6.2 8.6 4.6 29.5 9.2 7.6 11.6 4.7 8.4 1z" id="MLT5924" name="Mġarr">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Mellieħa" href="#" class="map__item">
+                                        <path d="M579.2 347.7l-15.7 40.6-26.2 7.6-16.9 11.4-20.8 6.7-7.7 5.7-1.5 14.2 5.4 15.2-5.4 6.7-17 1.9-9.2 7.6-20.8 9.5-16.9 5.7-16.2 3.1-7-68.8-14.8-51-27.3-33.1 33-29.7 33.3-20.4 36.4-11.9 41.1-3.9 0 23.8-23.7 4.4-15.3 7.9-33.7 29.8 146.9 17z" id="MLT5925" name="Mellieħa">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="St. Paul's Bay" href="#" class="map__item">
+                                        <path d="M663.5 364.7l-19.9 36.9-16.2 26.6-8.5 15.2-2.3 13.4 5.4 12.3 0 9.5-3.8 4.8 13 17.1-7.6 9.5-7 5.7-6.9-5.7-3.1-10.5-16.9-13.3-13.9-2.8-20.8 3.8-5.4 4.7 3.1 3.8 10-0.9 7.7 2.8 3.1 9.6 9.2 5.7 9.3 3.8 2.3 6.6-5.4 4.8-10 5.7-6.2 5.7-8.4-1-11.6-4.7-9.2-7.6-4.6-29.5-6.2-8.6-19.2-1.9-8.5-1.9-0.8-9.5 7-6.6 3.8-9.5-4.6-5.7-14.6-3.9-5.4-15.2 1.5-14.2 7.7-5.7 20.8-6.7 16.9-11.4 26.2-7.6 15.7-40.6 59 6.8 25.3 10.2z" id="MLT5926" name="St. Paul's Bay">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Mosta" href="#" class="map__item">
+                                        <path d="M631.2 500.5l10.8 1.9 5.4 8.6 2.3 8.5 2.3 19 3.1 8.6-4.6 5.7 0 10.4 5.4 18.1-9.3-0.9-9.2-6.7-14.6-6.7-16.2 2-8.5 4.7-15.4-15.2-7.6-9.5-2.4-9.5 6.2-5.7 10-5.7 5.4-4.8-2.3-6.6-9.3-3.8-9.2-5.7-3.1-9.6-7.7-2.8-10 0.9-3.1-3.8 5.4-4.7 20.8-3.8 13.9 2.8 16.9 13.3 3.1 10.5 6.9 5.7 7-5.7 7.6-9.5z" id="MLT5927" name="Mosta">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Naxxar" href="#" class="map__item">
+                                        <path d="M732.9 416.2l-4.7 34.9-1.5 20.9-19.2 0.9-11.6 4.8-6.1 5.7-3.1 18.1 0.7 12.3 10.1 10.5-7.7 11.4 4.6 11.4-9.3 4.7-15.4 2.9-14.6-7.6-3.1-8.6-2.3-19-2.3-8.5-5.4-8.6-10.8-1.9-13-17.1 3.8-4.8 0-9.5-5.4-12.3 2.3-13.4 8.5-15.2 16.2-26.6 19.9-36.9 17.9 7.1 51.5 44.4z" id="MLT5928" name="Naxxar">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Lija" href="#" class="map__item">
+                                        <path d="M685.1 551.8l5.4 10.5-6.9 20-16.2 0.9-11.5-1.9-5.4-18.1 0-10.4 4.6-5.7 14.6 7.6 15.4-2.9z" id="MLT5929" name="Lija">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Balzan" href="#" class="map__item">
+                                        <path d="M705.9 569l6.2 9.5 3.8 11.4-1.5 11.4-14.6-2.9-9.3-5.7-6.9-10.4 6.9-20 15.4 6.7z" id="MLT5930" name="Balzan">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Iklin" href="#" class="map__item">
+                                        <path d="M725.9 535.7l0.8 26.6-20.8 6.7-15.4-6.7-5.4-10.5 9.3-4.7-4.6-11.4 7.7-11.4 10 0.9 8.4 2.9 10 7.6z" id="MLT5931" name="Iklin">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Għargħur" href="#" class="map__item">
+                                        <path d="M729.8 528.1l-3.9 7.6-10-7.6-8.4-2.9-10-0.9-10.1-10.5-0.7-12.3 3.1-18.1 6.1-5.7 11.6-4.8 0 9.5 11.5 4.8 2.3 15.2 6.2 10.5 2.3 15.2z" id="MLT5932" name="Għargħur">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Swieqi" href="#" class="map__item">
+                                        <path d="M782.9 501.5l4.6 5.7-0.7 11.4-9.3 7.6-5.4-5.7-6.9 6.6-13.1 4.8-15.4-1-6.9-2.8-2.3-15.2-6.2-10.5-2.3-15.2-11.5-4.8 0-9.5 19.2-0.9 12.3 5.7 9.3 8.5 3 14.3 10.1 2.9 21.5-1.9z" id="MLT5933" name="Swieqi">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Pembroke" href="#" class="map__item">
+                                        <path d="M828 468.2l-25.8 20.9-18.5 3.8-0.8 8.6-21.5 1.9-10.1-2.9-3-14.3-9.3-8.5-12.3-5.7 1.5-20.9 4.7-34.9 35.9 30.8 59.2 21.2z" id="MLT5934" name="Pembroke">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="St. Julian's" href="#" class="map__item">
+                                        <path d="M851.3 486.7l-36.6 31.5-8.9 26.3-11.3 6.3-7.7-8.7-7.8-5.2-1.5-10.7 9.3-7.6 0.7-11.4-4.6-5.7 0.8-8.6 18.5-3.8 25.8-20.9 16.6 5.9 6.7 12.6z" id="MLT5935" name="St. Julian's">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Sliema" href="#" class="map__item">
+                                        <path d="M860.5 563.1l-17.5 6.8 0.7-10.5-26.3-5.8-11.6-9.1 8.9-26.3 36.6-31.5 6.5 12.2 2.9 32.1-0.2 32.1z" id="MLT5936" name="Sliema">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="San Ġwann" href="#" class="map__item">
+                                        <path d="M777.5 526.2l1.5 10.7 7.8 5.2 7.7 8.7-7 13.8-25.9 1.5-9.7 3.3-25.2-7.1-0.8-26.6 3.9-7.6 6.9 2.8 15.4 1 13.1-4.8 6.9-6.6 5.4 5.7z" id="MLT5937" name="San Ġwann">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Gżira" href="#" class="map__item">
+                                        <path d="M843 569.9l-14.7 11.4-9.8-6.6-22.4-0.5-8.6-9.6 7-13.8 11.3-6.3 11.6 9.1 26.3 5.8-0.7 10.5z" id="MLT5938" name="Gżira">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Birkirkara" href="#" class="map__item">
+                                        <path d="M751.9 569.4l9.3 7.7 2.7 7.6-7 7.7-5 2.9-5.2 21.2-16.9-1.9-15.4-13.3 1.5-11.4-3.8-11.4-6.2-9.5 20.8-6.7 25.2 7.1z" id="MLT5939" name="Birkirkara">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Msida" href="#" class="map__item">
+                                        <path d="M796.1 574.2l0.7 17.6-0.7 9.7-6.6 8.1-11.3-11-21.3-6.2 7-7.7-2.7-7.6-9.3-7.7 9.7-3.3 25.9-1.5 8.6 9.6z" id="MLT5940" name="Msida">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Xbiex" href="#" class="map__item">
+                                        <path d="M828.3 581.3l-9.2 8.6-12.3 2.8-10-0.9-0.7-17.6 22.4 0.5 9.8 6.6z" id="MLT5941" name="Ta' Xbiex">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Pietà" href="#" class="map__item">
+                                        <path d="M814.3 603.4l-13.6 7.6-11.2-1.4 6.6-8.1 0.7-9.7 10 0.9 12.3-2.8-4.8 13.5z" id="MLT5942" name="Pietà">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Santa Venera" href="#" class="map__item">
+                                        <path d="M789.5 609.6l-15.5 6.2-4.2 8.3-13.8-2.9-9.3-4.7 5.2-21.2 5-2.9 21.3 6.2 11.3 11z" id="MLT5943" name="Santa Venera">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Ħamrun" href="#" class="map__item">
+                                        <path d="M815.4 615.8l-11.7 7.3-5.4 20.9-15.4-0.9-13.1-19 4.2-8.3 15.5-6.2 11.2 1.4 13.6-7.6 5 7.2-3.9 5.2z" id="MLT5944" name="Ħamrun">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Qormi" href="#" class="map__item">
+                                        <path d="M746.7 616.5l9.3 4.7 13.8 2.9 13.1 19-8.5 4.7-1.5 7.6-8.5 9.5-18.4 28.5-8.5 0-8.5-7.6-1.5-20.9-7.7-6.6-13.1-1.9-6.2-6.7-2.3-13.3 7.7-16.1 6.2-8.6 2.3-10.4 15.4 13.3 16.9 1.9z" id="MLT5945" name="Qormi">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Żebbuġ" href="#" class="map__item">
+                                        <path d="M729 685.8l-6.9 3.8-13.1-10.4-10.8-1.9-15.4 2.8-3.8 7.6-7.7 7.6-16.2 5.7-31.5-14.2-7.7-5.7-9.3 0.9-5.4-33.2-4.6-3.8 0.8-13.3 14.6-2.9 13.1 3.8 13.8 1.9 13.1-2.8 8.5-8.6 45.4-2.8-7.7 16.1 2.3 13.3 6.2 6.7 13.1 1.9 7.7 6.6 1.5 20.9z" id="MLT5946" name="Żebbuġ">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Dingli" href="#" class="map__item">
+                                        <path d="M560.4 693.4l-1.5 10.5-10.8 19-9.2 8.5-3 28.6-19.9-11-43.5-68.9 14-8.5 18.5 0.9 26.9-3.8 13.9 0 6.2 6.7 1.5 8.5 6.9 9.5z" id="MLT5947" name="Dingli">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Siġġiewi" href="#" class="map__item">
+                                        <path d="M729 685.8l8.5 7.6 8.5 0 1.5 12.4-12.3 10.4-9.3 10.5-10.7 1.9-2.3 6.6-7.7 3.8-3.1 9.5-6.2 12.4-16.9 4.7-9.3 8.6 2.4 9.5-2.4 5.7-11.5 0-10 6.6-9.1 18.4-11.3-3.5-91.9-50.9 3-28.6 9.2-8.5 10.8-19 1.5-10.5 20.8 3.8 16.2-2.8 9.2-12.4 9.3-0.9 7.7 5.7 31.5 14.2 16.2-5.7 7.7-7.6 3.8-7.6 15.4-2.8 10.8 1.9 13.1 10.4 6.9-3.8z" id="MLT5948" name="Siġġiewi">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Valletta" href="#" class="map__item">
+                                        <path d="M889.1 572.1l-14.2 12.2-10.6 10-12.1 7-23.9-20 14.7-11.4 17.5-6.8 14 2.8 14.6 6.2z" id="MLT5949" name="Valletta">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Kalkara" href="#" class="map__item">
+                                        <path d="M949.2 597.8l-17.7 13-3.1 10.4-17.7 0-10 3.8-0.9-23.7-11-4.8-13.9-12.2 14.2-12.2 60.1 25.7z" id="MLT5950" name="Kalkara">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Birgu" href="#" class="map__item">
+                                        <path d="M900.7 625l-21.1-17.8-15.3-12.9 10.6-10 13.9 12.2 11 4.8 0.9 23.7z" id="MLT5951" name="Birgu">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Xgħajra" href="#" class="map__item">
+                                        <path d="M970.4 632.4l-20.4 8.8-12.4-5.7-9.2-14.3 3.1-10.4 17.7-13 21.2 34.6z" id="MLT5952" name="Xgħajra">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Senglea" href="#" class="map__item">
+                                        <path d="M879.6 607.2l-19.7 21.6-13.9-16.1 6.2-11.4 12.1-7 15.3 12.9z" id="MLT5953" name="Senglea">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Floriana" href="#" class="map__item">
+                                        <path d="M852.2 601.3l-6.2 11.4-20 18-5.4-11.4-5.2-3.5 3.9-5.2-5-7.2 4.8-13.5 9.2-8.6 23.9 20z" id="MLT5954" name="Floriana">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Cospicua" href="#" class="map__item">
+                                        <path d="M900.7 625l-6.2 12.4-0.7 10.4-24.7 1.9-9.2 0-7.7-6.6 7.7-14.3 19.7-21.6 21.1 17.8z" id="MLT5955" name="Cospicua">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Żabbar" href="#" class="map__item">
+                                        <path d="M970.4 632.4l12.3 20-22 13.5-3 9.5-7 8.5-7.7 1-6.9 6.6-20.8-1.9-7.7-8.5-11.5-1-6.2-3.8 3.1-10.4 4.6-7.6 2.3-7.6-6.1-2.9 0.7-10.4 6.2-12.4 10-3.8 17.7 0 9.2 14.3 12.4 5.7 20.4-8.8z" id="MLT5956" name="Żabbar">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Marsa" href="#" class="map__item">
+                                        <path d="M826 630.7l-0.8 20-6.9 19.9-11.5 14.3-10 0-10.8-8.6-8.5-1.9 0-8.5-4.6-10.5 1.5-7.6 8.5-4.7 15.4 0.9 5.4-20.9 11.7-7.3 5.2 3.5 5.4 11.4z" id="MLT5957" name="Marsa">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Paola" href="#" class="map__item">
+                                        <path d="M859.9 628.8l-7.7 14.3 7.7 6.6-13.9 15.2-9.2 9.5-3.9 10.5-22.3 14.2-3.8-14.2 11.5-14.3 6.9-19.9 0.8-20 20-18 13.9 16.1z" id="MLT5958" name="Paola">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Fgura" href="#" class="map__item">
+                                        <path d="M889.9 676.3l-15.4 4.8-2.3 8.5-5.4 3.8-3.8-9.5 2.3-7.6-7-7.6-12.3-3.8 13.9-15.2 9.2 0 24.7-1.9 6.1 2.9-2.3 7.6-4.6 7.6-3.1 10.4z" id="MLT5959" name="Fgura">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Tarxien" href="#" class="map__item">
+                                        <path d="M866.8 693.4l-10 6.7-3.8 4.7-3.1 5.7-30.8-5.7-8.5-5.7 22.3-14.2 3.9-10.5 9.2-9.5 12.3 3.8 7 7.6-2.3 7.6 3.8 9.5z" id="MLT5960" name="Tarxien">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Żejtun" href="#" class="map__item">
+                                        <path d="M936.1 691.5l8.5 17.1 3.8 10.5-3.1 7.6 0.8 6.6 3.9 6.7-8.5 9.5-15.4-8.6-15.4-1.9-6.2 5.7-16.1-0.9-12.3-20.9-10.8-14.3-12.3-3.8 3.8-4.7 10-6.7 5.4-3.8 2.3-8.5 15.4-4.8 6.2 3.8 11.5 1 7.7 8.5 20.8 1.9z" id="MLT5961" name="Żejtun">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Marsaskala" href="#" class="map__item">
+                                        <path d="M995.5 753.1l-17.1-4.6-14.6-1.9-13.8-6.6-3.9-6.7-0.8-6.6 3.1-7.6-3.8-10.5-8.5-17.1 6.9-6.6 7.7-1 7-8.5 3-9.5 22-13.5 5.9 9.7 10.4 78.4-3.5 12.6z" id="MLT5962" name="Marsaskala">
+                                        </path>
+                                    </a>    
+                                    
+                                    <a xlink:title="Marsaxlokk" href="#" class="map__item">
+                                        <path d="M950 740l13.8 6.6 14.6 1.9 17.1 4.6-10.5 38.1-35.8-19.9-20.2 22.5-6.8-15.8-12.3-14.3-10.8-4.7-9.2 0-1.5-15.2 16.1 0.9 6.2-5.7 15.4 1.9 15.4 8.6 8.5-9.5z" id="MLT5963" name="Marsaxlokk">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Luqa" href="#" class="map__item">
+                                        <path d="M806.8 684.9l3.8 14.2-0.8 24.7 4.7 12.4 0.7 19 17.7 14.2 8.5 10.5 6.2 11.4-12.3 1.9-14.7-14.3-9.2-12.3-12.3-6.7-2.3-11.4-5.4-2.8-7.7-10.5-7-3.8-9.2 6.7-13.8-3.8-10.1-5.7-11.5 8.5-9.2 3.8-10-5.7 2.3-6.6 10.7-1.9 9.3-10.5 12.3-10.4-1.5-12.4 18.4-28.5 8.5-9.5 4.6 10.5 0 8.5 8.5 1.9 10.8 8.6 10 0z" id="MLT5964" name="Luqa">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Santa Luċija" href="#" class="map__item">
+                                        <path d="M849.9 710.5l1.5 10.5-1.5 4.7-40.1-1.9 0.8-24.7 8.5 5.7 30.8 5.7z" id="MLT5965" name="Santa Luċija">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Gudja" href="#" class="map__item">
+                                        <path d="M849.9 725.7l-1.6 10.5-5.3 3.8-3.1 7.6-0.8 16.1-6.2 5.7-17.7-14.2-0.7-19-4.7-12.4 40.1 1.9z" id="MLT5966" name="Gudja">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Għaxaq" href="#" class="map__item">
+                                        <path d="M888.4 743.8l1.5 15.2-3.8 9.5-19.3 5.7-2.3 8.5-6.2 7.6-10.7 1-6.2-11.4-8.5-10.5 6.2-5.7 0.8-16.1 3.1-7.6 5.3-3.8 1.6-10.5 1.5-4.7-1.5-10.5 3.1-5.7 12.3 3.8 10.8 14.3 12.3 20.9z" id="MLT5967" name="Għaxaq">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Birżebbuġa" href="#" class="map__item">
+                                        <path d="M929 793.8l-20.2 22.6-12.9 27 0 39.6-41.7-16.8-11.5-7.1-24.6-2.4 7.1-13.2-5.3-12.3 1.5-7.6 6.9 0 14.7 4.7 11.5-1.9 2.3-5.7-9.2-29.4 10.7-1 6.2-7.6 2.3-8.5 19.3-5.7 3.8-9.5 9.2 0 10.8 4.7 12.3 14.3 6.8 15.8z" id="MLT5968" name="Birżebbuġa">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Mqabba" href="#" class="map__item">
+                                        <path d="M767.5 738.1l3.9 8.5-3.9 5.7-4.6 11.4-24.6 1.9-15.4 2.9-12.4-4.8-14.6-2.8 6.2-12.4 3.1-9.5 7.7-3.8 10 5.7 9.2-3.8 11.5-8.5 10.1 5.7 13.8 3.8z" id="MLT5969" name="Mqabba">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Kirkop" href="#" class="map__item">
+                                        <path d="M799.1 759.9l-17.7 17.1-7-8.5-11.5-4.8 4.6-11.4 3.9-5.7-3.9-8.5 9.2-6.7 7 3.8 7.7 10.5 5.4 2.8 2.3 11.4z" id="MLT5970" name="Kirkop">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Safi" href="#" class="map__item">
+                                        <path d="M835.3 793.2l-9.3 8.5-16.2-7.6-10 6.7-11.5 5.7-8.5-2.9-8.4-8.5-0.8-6.7 10.8-11.4 17.7-17.1 12.3 6.7 9.2 12.3 14.7 14.3z" id="MLT5971" name="Safi">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Attard" href="#" class="map__item">
+                                        <path d="M738.3 765.6l3 9.5-7.7 3.8-0.7 6.7 5.4 4.7-13.9 12.4-15.4 18-5.5 14-64.4-20.3 9.1-18.4 10-6.6 11.5 0 2.4-5.7-2.4-9.5 9.3-8.6 16.9-4.7 14.6 2.8 12.4 4.8 15.4-2.9z" id="MLT5972" name="Qrendi">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Qrendi" href="#" class="map__item">
+                                        <path d="M781.4 777l-10.8 11.4 0.8 6.7 8.4 8.5 8.5 2.9 11.5-5.7 10-6.7 16.2 7.6 9.3-8.5 12.3-1.9 9.2 29.4-2.3 5.7-11.5 1.9-14.7-4.7-6.9 0-1.5 7.6 5.3 12.3-7.1 13.2-64.9-6.5-49.7-15.5 5.5-14 15.4-18 13.9-12.4-5.4-4.7 0.7-6.7 7.7-3.8-3-9.5 24.6-1.9 11.5 4.8 7 8.5z" id="MLT5973" name="Żurrieq">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Żurrieq" href="#" class="map__item">
+                                        <path d="M74.3 77.3l-4.3 14.4-8.6 8.4 0 12.2-17.2 18.3-14 19.1-25.8-16.8 8-34.7-9.5-35.1-1.9-27.2 20.4 17 27.7 12.2 11.1-4.6 4.9 11.4 9.2 5.4z" id="MLT5974" name="Saint Lawrence">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Għarb" href="#" class="map__item">
+                                        <path d="M92.8 78.8l-18.5-1.5-9.2-5.4-4.9-11.4-11.1 4.6-27.7-12.2-20.4-17 30.9-10.8 45.4-6.9-1.1 12.6 9.2 11.4 5.6 15.2 1.8 21.4z" id="MLT5975" name="Għarb">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Għasri" href="#" class="map__item">
+                                        <path d="M146.4 85.6l-13-0.7-11.7 1.5-3.7 4.6-17.2-3.1-8-9.1-1.8-21.4-5.6-15.2-9.2-11.4 1.1-12.6 53.6-8.1-7.9 13.1-0.6 19.8 2.4 16.7 5.6 2.3 8.6-3 6.1 8.4 1.3 18.2z" id="MLT5976" name="Għasri">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Żebbuġ" href="#" class="map__item">
+                                        <path d="M231 15.8l-10.7 10.4 1.8 19.1-2.4 6.1-15.4 0.7-12.4 6.1-9.2 10.7-1.2 10.6 3.7 10.7-3.1 6.1-6.8 0.8-14.1 0-14.8-11.5-1.3-18.2-6.1-8.4-8.6 3-5.6-2.3-2.4-16.7 0.6-19.8 7.9-13.1 60-9.1 40.1 14.8z" id="MLT5977" name="Żebbuġ">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Xagħra" href="#" class="map__item">
+                                        <path d="M275.5 36.8l-7.8 22.2 0 35.8-8 3.8-1.9 14.5-3.7 9.1-0.6 14.5-14.1-10.7-9.9-4.6-26.5 5.4-16-3.1 1.2-8.4-12.9-18.2 6.8-0.8 3.1-6.1-3.7-10.7 1.2-10.6 9.2-10.7 12.4-6.1 15.4-0.7 2.4-6.1-1.8-19.1 10.7-10.4 27.5 10.1 17 10.9z" id="MLT5978" name="Xagħra">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Nadur" href="#" class="map__item">
+                                        <path d="M357 95.5l-21.6 14.5-9.2 2.3-1.9 7.6-0.6 15.3-6.1 8.3-21.6 3.1-20.3 0-11.1-2.3-11.1-7.6 0.6-14.5 3.7-9.1 1.9-14.5 8-3.8 0-35.8 7.8-22.2 66.8 43.1 14.7 15.6z" id="MLT5979" name="Nadur">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Qala" href="#" class="map__item">
+                                        <path d="M304.2 163.9l-2-9.7-6.2-7.6 21.6-3.1 6.1-8.3 0.6-15.3 1.9-7.6 9.2-2.3 21.6-14.5 36 38.2-31.8 23.2-45.7 1.8-11.3 5.2z" id="MLT5980" name="Qala">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Kerċem" href="#" class="map__item">
+                                        <path d="M92.8 78.8l8 9.1 17.2 3.1 7.4 9.9 3.7 11.4 6.8 3.8 0.6 6.1-0.6 19.8-12.9-3.8-10.5-1.5-9.8 4.5-16.7 11.5-17.2 17.2-22.1-9.5-16.5-10.7 14-19.1 17.2-18.3 0-12.2 8.6-8.4 4.3-14.4 18.5 1.5z" id="MLT5981" name="Kerċem">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Victoria" href="#" class="map__item">
+                                        <path d="M146.4 85.6l14.8 11.5 14.1 0 12.9 18.2-1.2 8.4-2.4 16-17.9 0-6.8 6.1-0.6-10.6-9.2-5.4-5-7.6-8.6 0-0.6-6.1-6.8-3.8-3.7-11.4-7.4-9.9 3.7-4.6 11.7-1.5 13 0.7z" id="MLT5982" name="Victoria">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Fontana, Gozo" href="#" class="map__item">
+                                        <path d="M159.9 145.8l-9.2 6.9-9.9-3.1-4.9-7.6 0.6-19.8 8.6 0 5 7.6 9.2 5.4 0.6 10.6z" id="MLT5983" name="Fontana, Gozo">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Munxar" href="#" class="map__item">
+                                        <path d="M135.9 142l4.9 7.6 9.9 3.1-1.9 6.1-6.7 12.1-10.5 12.2-2.1 8.1-31.5-8.7-29.2-12.6 17.2-17.2 16.7-11.5 9.8-4.5 10.5 1.5 12.9 3.8z" id="MLT5984" name="Munxar">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Sannat" href="#" class="map__item">
+                                        <path d="M230.1 182.4l5.2 10.6-35.5 7.9-48.2-3.7-22.1-6 2.1-8.1 10.5-12.2 6.7-12.1 9.3 2.2 19.7 0 11.7 3.1 8.6 8.4 12.3 3.8 11.7 6.8 8-0.7z" id="MLT5985" name="Sannat">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Xewkija" href="#" class="map__item">
+                                        <path d="M253.5 136.7l-4.9 10.6-5.5 6.1-1.3 14.5-10.4 10.7-1.3 3.8-8 0.7-11.7-6.8-12.3-3.8-8.6-8.4-11.7-3.1-19.7 0-9.3-2.2 1.9-6.1 9.2-6.9 6.8-6.1 17.9 0 2.4-16 16 3.1 26.5-5.4 9.9 4.6 14.1 10.7z" id="MLT5986" name="Xewkija">
+                                        </path>
+                                    </a>
+                                    
+                                    <a xlink:title="Għajnsielem" href="#" class="map__item">
+                                        <path d="M403.1 229.7l-26.4 4-8.7-0.5 3.1-9.4-6.9-17-3.6-17.2 9.5-6.8 18.4 0.8 28.8 10.6 18.2 19.5-32.4 16z m-167.8-36.7l-5.2-10.6 1.3-3.8 10.4-10.7 1.3-14.5 5.5-6.1 4.9-10.6 11.1 7.6 11.1 2.3 20.3 0 6.2 7.6 2 9.7-58.6 26.8-10.3 2.3z" id="MLT5987" name="Għajnsielem">
+                                        </path>
+                                    </a>
+                                    
+                                    <circle cx="565.5" cy="410.5" id="0">
+                                    </circle>
+                                    <circle cx="658.8" cy="708.6" id="1">
+                                    </circle>
+                                    <circle cx="194.7" cy="138.8" id="2">
+                                    </circle>
+                                   </svg>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
